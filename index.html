@@ -1,0 +1,20 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Переход к опросу</title>
+</head>
+<body>
+    <script>
+        // ЗДЕСЬ ВАШИ ДВЕ ССЫЛКИ НА GOOGLE ФОРМЫ
+        const form1 = "https://docs.google.com/forms/d/e/1FAIpQLSfhkDUaf2idzGgJ9qvemhSAukn9JNBJ5J2CFG7iAqec0_RoLg/viewform?usp=dialog";
+        const form2 = "https://docs.google.com/forms/d/e/1FAIpQLScaQnE3ZOs-oCBeaeY-fDoANUdQ4m5sLr-ExvaufzA6HDLmBQ/viewform?usp=sharing&ouid=103892650153995154074";
+        
+        const randomIndex = Math.floor(Math.random() * 2);
+        const targetUrl = randomIndex === 0 ? form1 : form2;
+        
+        window.location.href = targetUrl;
+    </script>
+</body>
+</html>

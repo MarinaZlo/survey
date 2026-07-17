@@ -8,11 +8,13 @@ html
 <body>
     <script>
         // ЗДЕСЬ ВАШИ ДВЕ ССЫЛКИ НА GOOGLE ФОРМЫ
-        const form1 = "https://docs.google.com/forms/d/e/1FAIpQLSfhkDUaf2idzGgJ9qvemhSAukn9JNBJ5J2CFG7iAqec0_RoLg/viewform?usp=dialog";
-        const form2 = "https://docs.google.com/forms/d/e/1FAIpQLScaQnE3ZOs-oCBeaeY-fDoANUdQ4m5sLr-ExvaufzA6HDLmBQ/viewform?usp=sharing&ouid=103892650153995154074";
+        const form1 = "https://docs.google.com/forms/d/1B-yd_9OX7FtGkt7TzuPrvxaEf2igHyvBrdR7RJ6epNU/edit";
+        const form2 = "https://docs.google.com/forms/d/11mSPoMrOl4G78WZ3OSzh9bpPKhF6B75Uv-a1qsH3R5c/edit";
+        const form3 = "https://docs.google.com/forms/d/16mHQy03l-bpLcW-4GtkEtl1nsLsMvOv6Zuq80uXsrNI/edit";
+        const form4 = "https://docs.google.com/forms/d/1eaYqnfzYhuimCks9k3B-IhRNgm08CNK8P0mW8WLD9-M/edit";
         
-        const randomIndex = Math.floor(Math.random() * 2);
-        const targetUrl = randomIndex === 0 ? form1 : form2;
+        const randomIndex = Math.floor(Math.random() * 4);
+        const targetUrl = randomIndex === 0 ? form1 : form2; form3; form4;
         
         window.location.href = targetUrl;
     </script>

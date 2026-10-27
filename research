@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Переход к опросу</title>
+</head>
+<body>
+    <script>
+        // ЗДЕСЬ ВАШИ ССЫЛКИ НА GOOGLE ФОРМЫ
+        const form1 = "https://forms.gle/hxC6ZKPSKFkzb4eq7;
+        const form2 = "https://forms.gle/ucdjYhoR9YBNPUrV8";
+        const form3 = "https://forms.gle/RnExD3zsQb59vwvE6";
+        
+        // Помещаем все формы в массив
+        const forms = [form1, form2, form3];
+        
+        // Выбираем случайный индекс от 0 до 2
+        const randomIndex = Math.floor(Math.random() * forms.length);
+        
+        // Получаем случайную форму
+        const targetUrl = forms[randomIndex];
+        
+        // Перенаправляем пользователя
+        window.location.href = targetUrl;
+    </script>
+</body>
+</html>

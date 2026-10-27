@@ -6,22 +6,14 @@
 </head>
 <body>
     <script>
-        // ЗДЕСЬ ВАШИ ССЫЛКИ НА GOOGLE ФОРМЫ
-        const form1 = "https://forms.gle/436rEHpRkPUog56s9";
-        const form2 = "https://forms.gle/fjm9dD3dB3iQH4pL9";
-        const form3 = "https://forms.gle/1WREULLHgoxBcqu29";
+        var links = [
+            "https://docs.google.com/forms/d/e/1FAIpQLScpYXB5PYXIiG4WAjw3c0_i2jEwE4l2BcgRUeLv2VEbXNk51A/viewform?usp=dialog",
+            "https://docs.google.com/forms/d/e/1FAIpQLSffEJ2dgea3-xhYVYOaX62PqS2tNwqR_7ji3TVJTOOyTdbbhg/viewform?usp=dialog",
+            "https://docs.google.com/forms/d/e/1FAIpQLSeXUKCbGDoX9o8VTtccGjIVvclSjkEIRo-li9KRz7cqUzEODQ/viewform?usp=dialog"
+        ];
         
-        // Помещаем все формы в массив
-        const forms = [form1, form2, form3];
-        
-        // Выбираем случайный индекс от 0 до 2
-        const randomIndex = Math.floor(Math.random() * forms.length);
-        
-        // Получаем случайную форму
-        const targetUrl = forms[randomIndex];
-        
-        // Перенаправляем пользователя
-        window.location.href = targetUrl;
+        var randomIndex = Math.floor(Math.random() * links.length);
+        window.location.href = links[randomIndex];
     </script>
 </body>
 </html>
